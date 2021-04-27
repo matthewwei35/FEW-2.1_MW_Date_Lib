@@ -1,6 +1,6 @@
 {
   "name": "@matthewwei35/date_lib",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Simple date library that handles date operations in a better and more intuitive way than the built in Date Object.",
   "main": "index.js",
   "directories": {
