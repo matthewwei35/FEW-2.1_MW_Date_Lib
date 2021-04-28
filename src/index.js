@@ -116,4 +116,4 @@ class D {
   }
 }
 
-module.exports = D;
+module.exports = { D, addPadding };

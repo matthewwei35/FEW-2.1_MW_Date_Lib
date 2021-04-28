@@ -1,6 +1,6 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 const { test, expect } = require('@jest/globals');
-const D = require('../src/index');
+const { D, addPadding } = require('../src/index');
 
 const date = new Date();
 const d = new D(date);
@@ -43,7 +43,7 @@ test('Test dt', () => {
 
 // --- Hour --- //
 test('Test hour', () => {
-  expect(d.hour).toBe(date.getHours());
+  expect(d.hour).toBe(addPadding(date.getHours()));
 });
 
 test('Test hr', () => {
