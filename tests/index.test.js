@@ -5,7 +5,6 @@ const D = require('../src/index');
 const date = new Date();
 const d = new D(date);
 const bday = new D('Nov 8, 2002 06:05:09');
-const unixEpoch = new D(0);
 
 // --- Year --- //
 test('Test year', () => {
@@ -26,11 +25,11 @@ test('Test yr', () => {
 
 // --- Month --- //
 test('Test month', () => {
-  expect(unixEpoch.month).toBe('December');
+  expect(bday.month).toBe('November');
 });
 
 test('Test mth', () => {
-  expect(unixEpoch.mth).toBe('Dec');
+  expect(bday.mth).toBe('Nov');
 });
 
 // --- Date --- //
